@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  text-align: center;
+  background-color: #f4e4ba;
+}
+
+h1 {
+  background-color: #081b31;
+  color: white;
+  height: 5rem;
+  line-height: 5rem;
+}
+
+/* Choices */
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.choice {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background-color: #081b31;
+  transform: scale(1.1);
+}
+
+.choice img {
+  height: 100px;
+}
+
+/* Win Animation */
+.win {
+  box-shadow: 0 0 30px green;
+  transform: scale(1.2);
+}
+
+/* Score */
+.score-board {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+.score p:first-child {
+  font-size: 3rem;
+}
+
+/* Message */
+.msg-container {
+  margin-top: 2rem;
+}
+
+#msg {
+  background-color: #081b31;
+  color: white;
+  font-size: 1.4rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: inline-block;
+}
+
+/* Reset Button */
+#reset {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  background-color: #af4d98;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+#reset:hover {
+  background-color: #912f78;
+}
